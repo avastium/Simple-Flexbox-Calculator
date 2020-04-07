@@ -1,0 +1,31 @@
+* {
+    padding: 0;
+    margin: 0;
+    background-color: #121212;
+}
+
+#output-window {
+    margin-left: 50%;
+    margin-right: 50%;
+    transform: translate(-50%, 50%);
+    width: 29%;
+    height: 70px;
+    border-radius: 15px;
+    color: white;
+}
+
+#digit-block {
+    margin-left: 50%;
+    margin-right: 50%;
+    transform: translate(-50%, 15%);
+}
+
+input[type="button"] {
+    margin: 7px;
+    width: 80px;
+    height: 50px;
+    color: white;
+    border-radius: 10px;
+    outline: 0;
+    font-size: 200%;
+}
