@@ -23,6 +23,27 @@ body {
   margin-top: 15px;
 }
 
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin-top: 10%;
+  font-size: 32px;
+  text-align: center;
+}
+
+.calculator {
+  overflow: hidden;
+  width: 100%;
+}
+
+@media (min-width: 321px) {
+  .calculator {
+    width: 320px;
+  }
+}
+
 .calculator input {
   width: 100%;
   height: 70px;
@@ -33,24 +54,6 @@ body {
   border: none;
 }
 
-.container {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
-  margin-top: 10%;
-  font-size: 32px;
-  text-align: center;
-}
-.calculator {
-  overflow: hidden;
-  width: 100%;
-}
-@media (min-width: 321px) {
-  .calculator {
-    width: 320px;
-  }
-}
 .calculator .button {
   box-sizing: border-box;
   height: 50px;
@@ -62,10 +65,12 @@ body {
   -khtml-user-select: none;
   -webkit-user-select: none;
 }
+
 .calculator .long {
   float: right;
   height: 100px;
 }
+
 .calculator .big {
   width: 50%;
 }
