@@ -42,7 +42,15 @@ body {
   font-size: 32px;
   text-align: center;
 }
-
+.calculator {
+  overflow: hidden;
+  width: 100%;
+}
+@media (min-width: 321px) {
+  .calculator {
+    width: 320px;
+  }
+}
 .calculator .button {
   box-sizing: border-box;
   height: 50px;
@@ -54,12 +62,10 @@ body {
   -khtml-user-select: none;
   -webkit-user-select: none;
 }
-
 .calculator .long {
   float: right;
   height: 100px;
 }
-
 .calculator .big {
   width: 50%;
 }
