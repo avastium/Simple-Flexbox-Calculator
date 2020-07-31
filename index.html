@@ -7,37 +7,34 @@
     <link href="style.css" type="text/css" rel="stylesheet"></link>
 </head>
 <body>
-    <input type="button" id="output-window" value="0" disabled>
-    <table id="digit-block">
-        <tr>
-            <td><input type="button" value="C" onclick="clearAll()"></td>
-            <td><input type="button" value="÷" onclick="input('/')"></td>
-            <td><input type="button" value="×" onclick="input('*')"></td>
-            <td><input type="button" value="-" onclick="input('-')"></td>
-        </tr>
-        <tr>
-            <td><input type="button" value="7" onclick="input(7)"></td>
-            <td><input type="button" value="8" onclick="input(8)"></td>
-            <td><input type="button" value="9" onclick="input(9)"></td>
-            <td rowspan=2><input type="button" value="+" style="height: 116px" onclick="input('+')"></td>
-        </tr>
-        <tr>
-            <td><input type="button" value="4" onclick="input(4)"></td>
-            <td><input type="button" value="5" onclick="input(5)"></td>
-            <td><input type="button" value="6" onclick="input(6)"></td>
-        </tr>
-        <tr>
-            <td><input type="button" value="1" onclick="input(1)"></td>
-            <td><input type="button" value="2" onclick="input(2)"></td>
-            <td><input type="button" value="3" onclick="input(3)"></td>
-            <td rowspan=2><input type="button" value="=" style="height: 116px" onclick="equal()"></td>
-        </tr>
-        <tr>
-            <td><input type="button" value="0" onclick="input(0)"></td>
-            <td><input type="button" value="CE" onclick="clearLast()"></td>
-            <td><input type="button" value="." onclick="input('.')"></td>
-        </tr>
+    <div class="control-bar">
+        <input type="button" onclick="darkEnable()" value="Переключить тему (светлая/темная)" id="theme_button">
     </div>
+
+    <div class="container">
+        <div class="calculator">
+            <input type="button" id="output-window" value="0" disabled>
+            <div class="button" onclick="clearAll()">C</div>
+            <div class="button" onclick="input('/')">÷</div>
+            <div class="button" onclick="input('*')">×</div>
+            <div class="button" onclick="input('-')">-</div>
+            <div class="button" onclick="input(7)">7</div>
+            <div class="button" onclick="input(8)">8</div>
+            <div class="button" onclick="input(9)">9</div>
+            <div class="button long" onclick="input('+')">+</div>
+            <div class="button" onclick="input('4')">4</div>
+            <div class="button" onclick="input('5')">5</div>
+            <div class="button" onclick="input('6')">6</div>
+            <div class="button" onclick="input('1')">1</div>
+            <div class="button" onclick="input('2')">2</div>
+            <div class="button" onclick="input('3')">3</div>
+            <div class="button long" onclick="equal()">=</div>
+            <div class="button" onclick="input('0')">0</div>
+            <div class="button" onclick="clearLast()">CE</div>
+            <div class="button" onclick="input('.')">.</div>
+        </div>
+    </div>
+
     <script src="script.js" type="text/javascript"></script>
 </body>
 </html>
