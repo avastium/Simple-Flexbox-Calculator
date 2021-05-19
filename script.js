@@ -40,7 +40,7 @@ function darkEnable() {
     themeButton.style.backgroundColor = COLOR_DARK;
     themeButton.style.borderColor = COLOR_LIGHT;
     for (let i = 0; i < buttons.length; i++) {
-        buttons[i].style.color = COLOR_LIGHT;
+      buttons[i].style.color = COLOR_LIGHT;
     }
     darktheme = true;
   } else {
@@ -51,7 +51,7 @@ function darkEnable() {
     themeButton.style.backgroundColor = COLOR_LIGHT;
     themeButton.style.borderColor = COLOR_DARK;
     for (let i = 0; i < buttons.length; i++) {
-        buttons[i].style.color = COLOR_DARK;
+      buttons[i].style.color = COLOR_DARK;
     }
     darktheme = false;
   }
