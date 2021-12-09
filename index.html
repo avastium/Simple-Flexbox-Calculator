@@ -8,12 +8,12 @@
 </head>
 <body>
   <div class="control-bar">
-    <input type="button" onclick="darkEnable()" value="Переключить тему (светлая/темная)" id="theme_button">
+    <input type="button" onclick="switchTheme()" value="Переключить тему (светлая/темная)" id="switch-theme">
   </div>
 
   <div class="container">
     <div class="calculator">
-      <input type="btn" id="output-window" value="0" disabled>
+      <input type="btn" id="output" value="0" disabled>
       <div class="btn" onclick="clearAll()">C</div>
       <div class="btn" onclick="input('/')">÷</div>
       <div class="btn" onclick="input('*')">×</div>

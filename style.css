@@ -1,23 +1,31 @@
 @import url("https://fonts.googleapis.com/css2?family=Baloo+Paaji+2&display=swap");
 
+:root {
+  --theme-color: #d6d6d6;
+  --theme-opposite-color: #2d2d2d;
+}
 * {
   padding: 0;
   margin: 0;
   outline: none;
 }
 body {
-  background-color: #d6d6d6;
+  color: var(--theme-opposite-color);
+  background-color: var(--theme-color);
   font-family: "Baloo Paaji 2", cursive;
+  transition: all 1s ease-out;
 }
 .control-bar {
   text-align: center;
 }
-#theme_button {
-  background-color: #d6d6d6;
-  border: 1px solid black;
-  border-radius: 20px;
+#switch-theme {
+  color: var(--theme-opposite-color);
+  background-color: var(--theme-color);
+  border: 1px solid var(--theme-opposite-color);
+  border-radius: 12px;
   padding: 10px;
   margin-top: 15px;
+  transition: all 1s ease-out;
 }
 .container {
   display: flex;
@@ -38,13 +46,15 @@ body {
   }
 }
 .calculator input {
-  width: 100%;
+  width: 298px;
   height: 70px;
   font-size: 26px;
-  background-color: #d6d6d6;
-  color: #2d2d2d;
+  background-color: var(--theme-color);
+  color: var(--theme-opposite-color);
   margin-bottom: 3%;
-  border: none;
+  padding: 10px;
+  border: 1px dashed var(--theme-opposite-color);
+  transition: all 1s ease-out;
 }
 .calculator .btn {
   box-sizing: border-box;
@@ -56,6 +66,8 @@ body {
   -moz-user-select: none;
   -khtml-user-select: none;
   -webkit-user-select: none;
+  border: 1px dashed var(--theme-opposite-color);
+  transition: all 1s ease-out;
 }
 .calculator .long {
   float: right;
