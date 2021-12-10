@@ -21,7 +21,7 @@ function clearLast() {
 }
 
 function input(n) {
-  if (expression.length >= 20) return alert("Достигнуто ограничение по количеству символов (20)");
+  if (expression.length >= 20) return alert("Character limit reached (20)");
   if (expression == '0' && n != '.') expression = '';
   expression += n;
   update();
